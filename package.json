@@ -1,0 +1,27 @@
+{
+  "name": "bc-catalog-importer",
+  "version": "0.1.0",
+  "description": "Extract a merchant's category hierarchy and product catalog (via a Claude chat) and create both in a BigCommerce demo store/channel via Catalog API v3.",
+  "type": "module",
+  "bin": {
+    "bc-catalog-importer": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.68.0",
+    "cheerio": "^1.0.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "optionalDependencies": {
+    "playwright": "^1.48.0"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
